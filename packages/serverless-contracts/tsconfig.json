@@ -5,6 +5,9 @@
     "composite": true,
     "outDir": "./dist/types"
   },
+  "references": [
+    { "path": "../../packages/serverless-helpers/tsconfig.build.json" }
+  ],
   "exclude": ["./dist"],
   "include": ["./**/*.ts"]
 }
