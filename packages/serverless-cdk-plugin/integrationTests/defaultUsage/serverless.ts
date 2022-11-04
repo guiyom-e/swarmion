@@ -26,7 +26,11 @@ const serverlessConfiguration: AWS & ServerlessCdkPluginConfig = {
       handler: './lambda.js',
     },
   },
-  construct: MyConstruct,
+  custom: {
+    cdkPlugin: {
+      stack: MyConstruct,
+    },
+  },
   resources: {
     Outputs: {
       testOutput: { Description: 'Some Test Output' },

@@ -7,7 +7,7 @@ import { getCdkProperty } from 'resources';
 const config: LambdaFunction = {
   environment: {
     ORCHESTRATOR_TABLE_NAME: getCdkProperty('dynamodbName'),
-    EVENT_BUS_NAME: getCdkProperty('eventBusName'),
+    EVENT_BUS_NAME: getCdkProperty('dynamodbArn'),
   },
   handler: getHandlerPath(__dirname),
   iamRoleStatements: [
