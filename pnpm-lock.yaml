@@ -251,17 +251,11 @@ importers:
 
   packages/nx-plugin:
     specifiers:
-      '@babel/cli': ^7.19.3
-      '@babel/core': ^7.19.6
-      '@babel/plugin-transform-runtime': ^7.19.6
-      '@babel/preset-env': ^7.19.4
-      '@babel/preset-typescript': ^7.18.6
       '@nrwl/devkit': ^15.0.4
       '@nrwl/js': ^15.0.4
       '@nrwl/linter': ^15.0.4
       '@types/node': ^18.11.8
       '@vitest/coverage-c8': ^0.24.4
-      babel-plugin-module-resolver: ^4.1.0
       concurrently: ^7.5.0
       dependency-cruiser: ^11.18.0
       eslint: ^8.26.0
@@ -270,21 +264,16 @@ importers:
       rimraf: ^3.0.2
       ts-node: ^10.9.1
       tsc-alias: ^1.7.0
+      tsup: ^6.5.0
       typescript: ^4.8.4
       vitest: ^0.24.4
     dependencies:
       '@nrwl/devkit': 15.0.4_nx@15.0.4+typescript@4.8.4
     devDependencies:
-      '@babel/cli': 7.19.3_@babel+core@7.19.6
-      '@babel/core': 7.19.6
-      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.19.6
-      '@babel/preset-env': 7.19.4_@babel+core@7.19.6
-      '@babel/preset-typescript': 7.18.6_@babel+core@7.19.6
       '@nrwl/js': 15.0.4_kghwnq4r3q6wf7zrdkwqnd6xjm
       '@nrwl/linter': 15.0.4_47o6xjpqhllzopfmgudu7fx4ya
       '@types/node': 18.11.8
       '@vitest/coverage-c8': 0.24.4
-      babel-plugin-module-resolver: 4.1.0
       concurrently: 7.5.0
       dependency-cruiser: 11.18.0
       eslint: 8.26.0
@@ -293,6 +282,7 @@ importers:
       rimraf: 3.0.2
       ts-node: 10.9.1_7jzoohtnaegavowzoeccrsbhty
       tsc-alias: 1.7.0
+      tsup: 6.5.0_mwhvu7sfp6vq5ryuwb6hlbjfka
       typescript: 4.8.4
       vitest: 0.24.4
 
