@@ -297,12 +297,6 @@ importers:
 
   packages/serverless-cdk-plugin:
     specifiers:
-      '@babel/cli': ^7.19.3
-      '@babel/core': ^7.19.6
-      '@babel/plugin-transform-runtime': ^7.19.6
-      '@babel/preset-env': ^7.19.4
-      '@babel/preset-typescript': ^7.18.6
-      '@babel/runtime': ^7.20.0
       '@serverless/test': ^11.1.0
       '@serverless/typescript': ^3.21.0
       '@types/jest': ^29.2.0
@@ -311,7 +305,6 @@ importers:
       '@types/serverless': ^3.12.8
       '@types/traverse': ^0.6.32
       aws-cdk-lib: ^2.49.0
-      babel-plugin-module-resolver: ^4.1.0
       concurrently: ^7.5.0
       constructs: ^10.1.145
       dependency-cruiser: ^11.18.0
@@ -327,19 +320,14 @@ importers:
       ts-node: ^10.9.1
       ts-toolbelt: ^9.6.0
       tsc-alias: ^1.7.0
+      tsup: ^6.5.0
       typescript: ^4.8.4
     dependencies:
-      '@babel/runtime': 7.20.0
       '@serverless/typescript': 3.21.0
       lodash: 4.17.21
       traverse: 0.6.7
       ts-toolbelt: 9.6.0
     devDependencies:
-      '@babel/cli': 7.19.3_@babel+core@7.19.6
-      '@babel/core': 7.19.6
-      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.19.6
-      '@babel/preset-env': 7.19.4_@babel+core@7.19.6
-      '@babel/preset-typescript': 7.18.6_@babel+core@7.19.6
       '@serverless/test': 11.1.0
       '@types/jest': 29.2.0
       '@types/lodash': 4.14.186
@@ -347,7 +335,6 @@ importers:
       '@types/serverless': 3.12.8
       '@types/traverse': 0.6.32
       aws-cdk-lib: 2.49.0_constructs@10.1.145
-      babel-plugin-module-resolver: 4.1.0
       concurrently: 7.5.0
       constructs: 10.1.145
       dependency-cruiser: 11.18.0
@@ -357,9 +344,10 @@ importers:
       prettier: 2.7.1
       rimraf: 3.0.2
       serverless: 3.23.0
-      ts-jest: 29.0.3_fxe5mizohawh6cjruma5lyyrna
+      ts-jest: 29.0.3_hucu3bj3dorfakok3tsxe7r4bu
       ts-node: 10.9.1_7jzoohtnaegavowzoeccrsbhty
       tsc-alias: 1.7.0
+      tsup: 6.5.0_mwhvu7sfp6vq5ryuwb6hlbjfka
       typescript: 4.8.4
 
   packages/serverless-configuration:
@@ -1820,7 +1808,7 @@ packages:
       '@babel/core': ^7.4.0-0
     dependencies:
       '@babel/core': 7.19.6
-      '@babel/helper-compilation-targets': 7.20.0_@babel+core@7.19.6
+      '@babel/helper-compilation-targets': 7.19.3_@babel+core@7.19.6
       '@babel/helper-plugin-utils': 7.19.0
       debug: 4.3.4
       lodash.debounce: 4.0.8
@@ -19196,7 +19184,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest/29.0.3_fxe5mizohawh6cjruma5lyyrna:
+  /ts-jest/29.0.3_hucu3bj3dorfakok3tsxe7r4bu:
     resolution: {integrity: sha512-Ibygvmuyq1qp/z3yTh9QTwVVAbFdDy/+4BtIQR2sp6baF2SJU/8CKK/hhnGIDY2L90Az2jIqTwZPnN2p+BweiQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -19219,6 +19207,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.6
       bs-logger: 0.2.6
+      esbuild: 0.15.12
       fast-json-stable-stringify: 2.1.0
       jest: 29.2.2_zbszuqcpgvqti4gsbgzr4pxrbm
       jest-util: 29.2.0
